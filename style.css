@@ -89,8 +89,7 @@ nav ul li a {
     margin-top: 20px;
 }
 .imglogo {
-    width: 200px;
-    height: 200px;
+    width: 100px;
     border-radius: 25px;
     object-fit: contain;
     object-position: center;
@@ -136,6 +135,8 @@ section {
     height: 625px;
     border-radius: 25px;
     margin: 0 auto;
+    object-fit: contain;
+    object-position: center;
 }
 .plan {
     background-color: #f4f4f4;
@@ -319,4 +320,16 @@ font-size: 20px;
 
 .whatsapp-button:hover {
     transform: scale(1.1);
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.navbar-brand img {
+    border-radius: 50%;
+    object-fit: cover;
 }

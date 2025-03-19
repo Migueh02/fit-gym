@@ -4,32 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>StrongerFit</title>
 </head>
 <body>
-    <nav>
-        <div>
-            <img class="imglogo" src="LogoGym.jpg" alt="logo LogoGym" width="100" height="100">
-        </div>
-        <div class="banner">StrongerFit</div>
-        <div>
-            <ul>
-                <li><a href="#INICIO">INICIO</a></li>
-                <li><a href="#HOMBRE">HOMBRE</a></li>
-                <li><a href="#MUJER">MUJER</a></li>
-                <li><a href="#SUPLEMENTOS">SUPLEMENTOS</a></li>
-                <li><a href="#PLANES">PLANES</a></li>
-                <li><a href="#CONVENIOS">CONVENIOS</a></li>
-                <li><a href="#ROPA">ROPA</a></li>
-                <li><a href="#FAQ">FAQ</a></li>
-                <li><a href="#CONTACTO">CONTACTO</a></li>
-                <li><a href="iniciarsesion.html" class="login" id="loginLink"><i class="fas fa-sign-in-alt"></i> Iniciar Sesión</a></li>
-                <li><a href="registrarsesion.html" class="login" id="registerLink"><i class="fas fa-user-plus"></i> Registrarse</a></li>
-            </ul>
-        </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Buscar..." aria-label="Buscar">
-            <button>Buscar</button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="imglogo" src="LogoGym.jpg" alt="logo LogoGym" width="25">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#INICIO">INICIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#HOMBRE">HOMBRE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#MUJER">MUJER</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#SUPLEMENTOS">SUPLEMENTOS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#PLANES">PLANES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#CONVENIOS">CONVENIOS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ROPA">ROPA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#FAQ">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#CONTACTO">CONTACTO</a></li>
+                    <li class="nav-item"><a class="nav-link login" id="loginLink" href="iniciarsesion.html"><i class="fas fa-sign-in-alt"></i> Iniciar Sesión</a></li>
+                    <li class="nav-item"><a class="nav-link login" id="registerLink" href="registrarsesion.html"><i class="fas fa-user-plus"></i> Registrarse</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     <main>
@@ -38,12 +39,12 @@
                 <source src="Cbum.mp4" type="video/mp4">
                 Tu navegador no soporta el video.
             </video>
-            <h2>HOMBRE</h2>
-            <img class="imgdepersona" src="men1.jpg" alt="Hombre entrenando" loading="lazy">
-            <h2>MUJER</h2>
-            <img class="imgdepersona" src="women1(2).jpg" alt="Mujer entrenando" loading="lazy">
-            <h2>SUPLEMENTOS</h2>
-            <img class="imgdesuplementos" src="suplementos.jpg" alt="Suplementos" loading="lazy">
+            <h2 id="HOMBRE">HOMBRE</h2>
+            <img class="imgdepersona responsive-img" src="men1.jpg" alt="Hombre entrenando" loading="lazy">
+            <h2 id="MUJER">MUJER</h2>
+            <img class="imgdepersona responsive-img" src="women1(2).jpg" alt="Mujer entrenando" loading="lazy">
+            <h2 id="SUPLEMENTOS">SUPLEMENTOS</h2>
+            <img class="imgdesuplementos responsive-img" src="suplementos.jpg" alt="Suplementos" loading="lazy">
             <h2>Planes de Entrenamiento</h2>
             <div class="plan">
                 <h3>Plan Básico</h3>
@@ -95,7 +96,7 @@
             <h2>Ubicación</h2>
             <div class="mapa">
                 <iframe class="iframe"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509349!2d144.96305791550417!3d-37.81362774202153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce6e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1ses!2sco!4v1611790274374!5m2!1ses!2sco" 
+                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=4.1127345,%20-73.63418107991976+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" 
                     width="600"
                     height="450"
                     style="border:0;"
@@ -103,7 +104,6 @@
                     loading="lazy">
                 </iframe>
             </div>
-            
         
         </section>
         <section class="redes-sociales">
@@ -158,5 +158,6 @@
         </div>
         
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
