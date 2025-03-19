@@ -333,3 +333,7 @@ font-size: 20px;
     border-radius: 50%;
     object-fit: cover;
 }
+
+.bg-black {
+    background-color: #000 !important;
+}
