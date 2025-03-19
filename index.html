@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>StrongerFit</title>
+</head>
+<body>
+    <nav>
+        <div>
+            <img class="imglogo" src="LogoGym.jpg" alt="logo LogoGym" width="100" height="100">
+        </div>
+        <div class="banner">StrongerFit</div>
+        <div>
+            <ul>
+                <li><a href="#INICIO">INICIO</a></li>
+                <li><a href="#HOMBRE">HOMBRE</a></li>
+                <li><a href="#MUJER">MUJER</a></li>
+                <li><a href="#SUPLEMENTOS">SUPLEMENTOS</a></li>
+                <li><a href="#PLANES">PLANES</a></li>
+                <li><a href="#CONVENIOS">CONVENIOS</a></li>
+                <li><a href="#ROPA">ROPA</a></li>
+                <li><a href="#FAQ">FAQ</a></li>
+                <li><a href="#CONTACTO">CONTACTO</a></li>
+                <li><a href="iniciarsesion.html" class="login" id="loginLink"><i class="fas fa-sign-in-alt"></i> Iniciar Sesión</a></li>
+                <li><a href="registrarsesion.html" class="login" id="registerLink"><i class="fas fa-user-plus"></i> Registrarse</a></li>
+            </ul>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar..." aria-label="Buscar">
+            <button>Buscar</button>
+        </div>
+    </nav>
+    <main>
+        <section class="servicios" id="INICIO">
+            <video class="video" controls autoplay loop muted>
+                <source src="Cbum.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <h2>HOMBRE</h2>
+            <img class="imgdepersona" src="men1.jpg" alt="Hombre entrenando" loading="lazy">
+            <h2>MUJER</h2>
+            <img class="imgdepersona" src="women1(2).jpg" alt="Mujer entrenando" loading="lazy">
+            <h2>SUPLEMENTOS</h2>
+            <img class="imgdesuplementos" src="suplementos.jpg" alt="Suplementos" loading="lazy">
+            <h2>Planes de Entrenamiento</h2>
+            <div class="plan">
+                <h3>Plan Básico</h3>
+                <p>Incluye acceso a rutinas básicas y seguimiento mensual.</p>
+            </div>
+            <div class="plan">
+                <h3>Plan Avanzado</h3>
+                <p>Incluye acceso a rutinas avanzadas, seguimiento semanal y asesoría personalizada.</p>
+            </div>
+        </section>
+        <section id="CONVENIOS">
+            <h2>Convenios con Gimnasios</h2>
+            <div class="gimnasio">
+                <h3>Gimnasio FitLife</h3>
+                <p>Descuento del 20% en membresías para nuestros usuarios.</p>
+            </div>
+            <div class="gimnasio">
+                <h3>Gimnasio PowerGym</h3>
+                <p>Acceso gratuito a clases grupales para nuestros usuarios.</p>
+            </div>
+        </section>
+        <section id="ROPA">
+            <h2>Ropa Deportiva</h2>
+            <div class="producto">
+                <img src="camiseta.jpg" alt="Camiseta Deportiva" loading="lazy">
+                <h3>Camiseta Deportiva</h3>
+                <p>$20.00</p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="pantalon.jpg" alt="Pantalón Deportivo" loading="lazy">
+                <h3>Pantalón Deportivo</h3>
+                <p>$30.00</p>
+                <button>Añadir al Carrito</button>
+            </div>
+        </section>
+        <section id="FAQ">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-item">
+                <h3>¿Cómo puedo registrarme?</h3>
+                <p>Para registrarte, haz clic en el enlace "Registrarse" en la parte superior de la página y completa el formulario.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Qué tipos de suplementos ofrecen?</h3>
+                <p>Ofrecemos una amplia variedad de suplementos para hombres y mujeres, incluyendo proteínas, vitaminas y más.</p>
+            </div>
+        </section>
+        <section id="ubicacion">
+            <h2>Ubicación</h2>
+            <div class="mapa">
+                <iframe class="iframe"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509349!2d144.96305791550417!3d-37.81362774202153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce6e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1ses!2sco!4v1611790274374!5m2!1ses!2sco" 
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+            
+        
+        </section>
+        <section class="redes-sociales">
+            <h2>Síguenos en redes sociales</h2>
+            <div class="redes">
+                <a href="#"><b>F</b></a> <!-- Facebook -->
+                <a href="#"><b>IG</b></a> <!-- Instagram -->
+                <a href="#"><b>Be</b></a> <!-- Behance -->
+                <a href="#"><b>♬</b></a> <!-- SoundCloud -->
+            </div>
+        </section>
+        <section class="contacto" id="CONTACTO">
+            <h2>Contacto</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input class="digitar" type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input class="digitar" type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea class="digitar" id="message" name="message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    
+    <button id="backToTop" aria-label="Volver arriba" title="Volver arriba" style="display: none;">↑</button>
+    
+    
+    
+    <a href="https://wa.me/573028334978" target="_blank" class="whatsapp-button">
+        <img src="whatsapp.png" alt="logo de WhatsApp" width="50" height="50">
+    </a>
+    <footer class="footer">
+        <div>
+            <img src="LogoGym.jpg" alt="Pizza Love Logo" class="footer-logo">
+        </div>
+        <div class="footer-left">©2025 StrongerFit</div>
+        <div class="footer-right">
+            <a href="#"><b>F</b></a> <!-- Facebook -->
+            <a href="#"><b>IG</b></a> <!-- Instagram -->
+            <a href="#"><b>Be</b></a> <!-- Behance -->
+            <a href="#"><b>♬</b></a> <!-- SoundCloud -->
+        </div>
+        
+    </footer>
+</body>
+</html>
